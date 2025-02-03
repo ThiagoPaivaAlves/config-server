@@ -1,0 +1,10 @@
+server:
+  port: 8888
+
+#General Configuration
+spring:
+  application:
+    name: config-server
+  profiles:
+    active:
+    - native
