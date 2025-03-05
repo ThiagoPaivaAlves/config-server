@@ -5,6 +5,18 @@ server:
 spring:
   application:
     name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          watch: true
+
   profiles:
     active:
     - native
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - 'refresh'
